@@ -5,5 +5,5 @@
 2.rgb转16进制工具
 
 ###进度更新
-1.使用gulp构建项目。利用了gulp-concat拼合文件，gulp-uglify混淆、压缩文件，browser-sync做浏览器调试
+1.使用gulp构建项目。利用了gulp-concat拼合文件，gulp-uglify混淆、压缩文件，browser-sync做浏览器调试<br>
 2.完成了rgb与hex的相互转换功能，希望加入颜色展示。
