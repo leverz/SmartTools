@@ -1,0 +1,3 @@
+#一些配置和依赖将不受git管理
+.idea/
+node_modules/
