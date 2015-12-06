@@ -3,16 +3,16 @@
 </div>
 <div class="wrapper-md" ng-controller="ColorCodeCtrl">
     <h1 class="m-t-none m-b">RGB</h1>
-    <div class="row row-padding" style="padding: 50px;">
-        <label class="col-md-1"><h2 class="margin5" style="margin: 5px;">Red</h2></label>
+    <div class="row row-padding">
+        <label class="col-md-1"><h2 class="margin5">Red</h2></label>
         <div class="col-md-2">
             <input type="text" class="form-control input-lg m-b" ng-model="red"/>
         </div>
-        <label class="col-md-1"><h2 style="margin: 5px;">Green</h2></label>
+        <label class="col-md-1"><h2 class="margin5">Green</h2></label>
         <div class="col-md-2">
             <input type="text" class="form-control input-lg m-b" ng-model="green"/>
         </div>
-        <label class="col-md-1"><h2 style="margin: 5px;">Blue</h2></label>
+        <label class="col-md-1"><h2 class="margin5"">Blue</h2></label>
         <div class="col-md-2">
             <input type="text" class="form-control input-lg m-b" ng-model="blue"/>
         </div>
@@ -28,9 +28,12 @@
     <br/>
     <h1 class="m-t-none m-b">Hex</h1>
     <div class="row row-padding" style="padding: 50px;">
-        <label class="col-md-1 text-right"><h2 class="margin5" style="margin: 5px;">#</h2></label>
+        <label class="col-md-1 text-right"><h2 class="margin5">#</h2></label>
         <div class="col-md-2">
             <input type="text" class="form-control input-lg m-b" ng-model="hex"/>
+        </div>
+        <div class="col-md-5">
+            <div class="color-box pull-right" style="background-color: {{'#'+hex}}"></div>
         </div>
     </div>
 </div>

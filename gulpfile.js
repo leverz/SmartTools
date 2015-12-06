@@ -7,6 +7,14 @@ var concat = require('gulp-concat');
 var rename = require('gulp-rename');
 var browserSync = require('browser-sync').create();
 var reload = browserSync.reload;
+var sass = require('gulp-sass');
+
+gulp.task('sass',function(){
+    gulp.src('./angular/css/scss/*.scss')
+        .pipe(sass())
+        .pipe(gulp.dest('./angular/css'))
+        .pipe(reload({stream:true}));
+});
 
 gulp.task('serve',function(){
     browserSync.init({
@@ -67,6 +75,7 @@ gulp.task('watch',function(){
         'angular/js/filters/*.js',
         'angular/js/controllers/bootstrap.js'
     ],['serve']);
+    gulp.watch('angular/css/scss/*.scss',['sass']);
 });
 
 gulp.task('start',['serve','watch']);
